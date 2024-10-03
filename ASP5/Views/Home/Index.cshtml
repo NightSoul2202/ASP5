@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Введіть значення та дату";
+}
+
+<h2>Введіть значення та дату</h2>
+
+<form action="/Home/SetCookie" method="post">
+    <div>
+        <label for="value">Значення:</label>
+        <input type="text" id="value" name="value" required />
+    </div>
+    <div>
+        <label for="expirationDate">Дата та час закінчення:</label>
+        <input type="datetime-local" id="expirationDate" name="expirationDate" required />
+    </div>
+    <button type="submit">Зберегти в Cookies</button>
+</form>
